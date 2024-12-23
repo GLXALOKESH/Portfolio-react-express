@@ -21,6 +21,7 @@ function App() {
         <Route path="/" element={<div>hello world</div>} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
+        
       </Routes>
     </Router>
   );
