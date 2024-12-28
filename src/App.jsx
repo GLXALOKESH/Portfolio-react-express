@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 import About from './pages/About';
 import Navbar from './components/Navbar.jsx';
-
+import Socials from './pages/Socials.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -15,6 +15,7 @@ function App() {
       {/* Define Routes */}
       <Routes>
         <Route path="/" element={<About />} />
+        <Route path="/socials" element={<Socials />} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
         
