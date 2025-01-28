@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --Primary: #3D52A0;
+    --HIGHLIGHT: #ADBBDA;
+    --LUMINANCE: #F2F2F2;
+    --SECONDERY: #7091E6;
+    --SHADES:#8697C4;
+    cursor: url('cursor-general.png'), auto;
+
+}
+body{
+    overflow: hidden;
+}
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #bd0ddc;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: drop 1s forwards, vanish 1s forwards;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+@keyframes vanish {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

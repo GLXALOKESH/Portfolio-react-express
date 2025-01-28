@@ -1,0 +1,32 @@
+.comp-socialcard-base{
+width: 226px;
+height: 202px;
+flex-shrink: 0; 
+border-radius: 20px;
+background: var(--SECONDERY, #7091E6);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5%;
+box-sizing: border-box;
+}
+.comp-socialcard-id{
+color: #FFF;
+
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.comp-socialcard-btn{
+padding: 5px;
+background-color: var(--SHADES);
+border-radius: 5px;
+border: 1px solid white ;
+margin-top: 10px;
+font-family: Inter;
+color: white;
+cursor:  url('cursor-pointer.png'), auto;
+user-select: none;
+}

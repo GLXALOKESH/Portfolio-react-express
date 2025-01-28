@@ -1,0 +1,39 @@
+.comp-servicecard-base{
+width: 352px;
+height: 257px;
+flex-shrink: 0;
+border-radius: 20px;
+background: var(--SECONDERY);
+padding: 7px;
+box-sizing: border-box;
+justify-content: space-between;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.comp-servicecard-title{
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.comp-servicecard-btn{
+text-transform: uppercase;
+font-family: Inter;
+border-radius: 38px;
+background: var(--Primary);
+width: 147px;
+height: 58px;
+flex-shrink: 0; 
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+margin-bottom: 20px;
+cursor:  url('cursor-pointer.png'), auto;
+user-select: none;
+}
