@@ -1,0 +1,61 @@
+.comp-ProjectCard-base{
+    width: 430px;
+    height: 251px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: var(--SECONDERY);
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "inter";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.comp-ProjectCard-title{
+text-transform: uppercase;
+font-size:x-large;
+display: -webkit-box; /* Ensures compatibility with WebKit-based browsers */
+-webkit-line-clamp: 2; /* Limits the text to 2 lines */
+-webkit-box-orient: vertical; /* Specifies the box orientation */
+overflow: hidden;
+text-overflow: ellipsis;
+text-align: center;
+}
+.comp-ProjectCard-desc{
+text-align: center;
+display: -webkit-box; /* Ensures compatibility with WebKit-based browsers */
+-webkit-line-clamp: 5; /* Limits the text to 2 lines */
+-webkit-box-orient: vertical; /* Specifies the box orientation */
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.comp-ProjectCard-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    cursor:  url('cursor-pointer.png'), auto;
+    user-select: none;
+
+}
+.btn{
+    display: flex;
+    gap: 2px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 31px;
+background: #D9D9D9;
+align-items: center;
+justify-content: center;
+padding: 0px  5px;
+color: black;
+text-transform: uppercase;
+font-weight: 500    ;
+font-size: 18px;
+
+}
+a{
+    cursor:  url('cursor-pointer.png'), auto;
+
+}

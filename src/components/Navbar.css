@@ -62,4 +62,7 @@ background-color:var(--SECONDERY);
 border-radius: 10px;
 }
 
+.comp-nav-nav ul li a {
+   cursor: url('cursor-pointer.png'), auto;
+}
   

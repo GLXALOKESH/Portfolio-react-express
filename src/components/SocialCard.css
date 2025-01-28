@@ -27,6 +27,6 @@ border: 1px solid white ;
 margin-top: 10px;
 font-family: Inter;
 color: white;
-cursor: pointer;
+cursor:  url('cursor-pointer.png'), auto;
 user-select: none;
 }

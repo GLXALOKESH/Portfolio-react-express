@@ -8,6 +8,34 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Function to generate a random rainbow color
+      function getRandomRainbowColor() {
+        const hue = Math.floor(Math.random() * 360); // Hue value in HSL
+        return `hsl(${hue}, 100%, 50%)`;
+      }
+
+      document.addEventListener("mousemove", (event) => {
+        // Create a particle
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+
+        // Set the particle's position
+        particle.style.left = `${event.pageX + 10}px`;
+        particle.style.top = `${event.pageY + 18}px`;
+
+        // Set a random rainbow color
+        particle.style.backgroundColor = getRandomRainbowColor();
+
+        // Append the particle to the body
+        document.body.appendChild(particle);
+
+        // Remove the particle after the animation ends
+        setTimeout(() => {
+          particle.remove();
+        }, 1000); // Matches the duration of the CSS animations
+      });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

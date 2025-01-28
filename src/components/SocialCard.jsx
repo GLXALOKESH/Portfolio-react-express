@@ -10,7 +10,7 @@ const SocialCard = (props) => {
         <div className="comp-socialcard-id">
          {props.id}
         </div>
-        <div className="comp-socialcard-btn">
+        <div className="comp-socialcard-btn" onClick={() => window.open(`${props.to}`, '_blank')}>
           Click me
         </div>
       </div> 
